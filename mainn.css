@@ -1,0 +1,171 @@
+*,*::before,*::after
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+}
+*
+{
+	text-decoration: none;
+}
+body
+{
+	font:17px 'sulphur point',sans-serif;
+	color: #fff;
+}
+.pages
+{
+	width: 100%;
+	height: 100vh;
+	background:url(http://www.sayidy.net/sites/default/files/styles/660xauto/public/main/articles/istock_000078669259_medium.jpg?itok=G183LhWW);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.pages::before
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+.pages .text
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	font:45px 'PT serif',serif;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 7;
+}
+.pages .text .texts span:first-child
+{
+margin-left:-100px;
+}
+.pages .text .texts span:last-child
+{
+margin-left: -50px;
+}
+header
+{
+	height: 100px;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 99;
+
+}
+header::after
+{
+	content: '';
+	position: absolute;
+	width: 90%;
+	height: 1px;
+	background: #fff;
+	bottom: 0;
+	opacity: 0.3;
+}
+header .logo
+{
+	width: 5%;
+}
+header .logo h1
+{
+	font-weight: 400;
+}
+header .menu
+{
+	width: 70%;
+}
+header .menu ul
+{
+	display: flex;
+}
+header .menu ul li
+{
+	flex-basis: 15%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+header .menu ul li a
+{
+	color: #fff;
+}
+.middle
+{
+	position: absolute;
+	background: #fcfcfc;
+	opacity: 0.3;
+	width: 80px;
+	height: 1px;
+	top: 50%;
+	left: 50px;
+}
+.middle::before, .middle-line::after
+{
+	position: absolute;
+	color: #fff;
+}
+.middle::before
+{
+	content: '01';
+	top: -25px;
+}
+.middle::after
+{
+	content: '04';
+	top: 7px;
+	right: 0;
+}
+.holder
+{
+	position: absolute;
+	opacity: 0.5;
+	width: 150px;
+	bottom: 13%;
+	left: 50px;
+	display: flex;
+	align-items: center;
+}
+.holder span
+{
+	width: 12px;
+	height: 12px;
+	background: #fcfcfc;
+	margin: 0 5px;
+	border-radius: 20px;
+}
+.holder span:first child
+{
+	width: 20px;
+	height: 20px;
+	border:1px solid #fcfcfc;
+	background:none;
+}
+.main
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+input
+{
+	border:3px solid #32e17c;
+	height: 40px;
+	width: 300px;
+	border-radius: 50px;
+	padding: 0px 10px;
+
+}
